@@ -71,13 +71,13 @@
 				i=0
 				c=0
 				while (i < 13):
-				painter.goto(-300,300-c)
-				painter.pendown()
-				painter.setheading(0)
-				painter.forward(600)
-				painter.penup()
-				i=i+1
-				c=c+50
+					painter.goto(-300,300-c)
+					painter.pendown()
+					painter.setheading(0)
+					painter.forward(600)
+					painter.penup()
+					i=i+1
+					c=c+50
 				a=0
 				b=0
 				while (a<13):
@@ -123,53 +123,53 @@
 				enemies1 = []
 				enemies2 = []
 				enemy_shapes = [enemy1, enemy2, enemy3, enemy4, enemy5, enemy6, enemy7, enemy8, enemy9, enemy10]
-				for s in enemy_shapes:
-				t = trtl.Turtle(shape=s)
-				t.speed(8)
-				enemies.append(t)
-				for s in enemy_shapes:
-				t = trtl.Turtle(shape=s)
-				t.speed(8)
-				enemies1.append(t)
-				for s in enemy_shapes:
-				t = trtl.Turtle(shape=s)
-				t.speed(8)
-				enemies2.append(t)
-				startx=-225
-				starty=-225
-				i=0
-				for t in enemies:
-				t.penup()
-				t.goto(startx, starty)
-				if (i%2 == 0):
-					startx = startx + 100
-					starty = starty- 50
-				else:
-					starty = starty + 150
-					startx = startx - 50
-				i=i+1
-				stax=225
-				stay=-225
-				u=0
-				for t in enemies1:
-				t.penup()
-				t.goto(stax, stay)
-				if (u%2 == 0):
-					stax = stax - 100
-				else:
-					stay = stay + 100
-				u=u+1
-				starx=-225
-				stary=225
-				e=0
-				for t in enemies2:
-				t.penup()
-				t.goto(starx, stary)
-				if (e < 4):
-					starx = starx + 100
-				else:
-					stary = stary - 100
-				e=e+1
+					for s in enemy_shapes:
+					t = trtl.Turtle(shape=s)
+					t.speed(8)
+					enemies.append(t)
+					for s in enemy_shapes:
+					t = trtl.Turtle(shape=s)
+					t.speed(8)
+					enemies1.append(t)
+					for s in enemy_shapes:
+					t = trtl.Turtle(shape=s)
+					t.speed(8)
+					enemies2.append(t)
+					startx=-225
+					starty=-225
+					i=0
+					for t in enemies:
+					t.penup()
+					t.goto(startx, starty)
+					if (i%2 == 0):
+						startx = startx + 100
+						starty = starty- 50
+					else:
+						starty = starty + 150
+						startx = startx - 50
+					i=i+1
+					stax=225
+					stay=-225
+					u=0
+					for t in enemies1:
+					t.penup()
+					t.goto(stax, stay)
+					if (u%2 == 0):
+						stax = stax - 100
+					else:
+						stay = stay + 100
+					u=u+1
+					starx=-225
+					stary=225
+					e=0
+					for t in enemies2:
+					t.penup()
+					t.goto(starx, stary)
+					if (e < 4):
+						starx = starx + 100
+					else:
+						stary = stary - 100
+					e=e+1
 				enemy4 = trtl.Turtle(shape=enemy4)
 				enemy4.penup()
 				enemy4.speed(8)
@@ -295,20 +295,20 @@
 					mouse.hideturtle()
 					wn.update()
 				if (move == 3500):
-				painter.pencolor("black")
-				painter.penup()
-				painter.fillcolor("white")
-				painter.goto(250,250)
-				painter.begin_fill()
-				painter.setheading(0)
-				painter.forward(50)
-				painter.setheading(90)
-				painter.forward(50)
-				painter.setheading(180)
-				painter.forward(50)
-				painter.setheading(270)
-				painter.forward(50)
-				painter.end_fill()
+					painter.pencolor("black")
+					painter.penup()
+					painter.fillcolor("white")
+					painter.goto(250,250)
+					painter.begin_fill()
+					painter.setheading(0)
+					painter.forward(50)
+					painter.setheading(90)
+					painter.forward(50)
+					painter.setheading(180)
+					painter.forward(50)
+					painter.setheading(270)
+					painter.forward(50)
+					painter.end_fill()
 				#create screen object and make it persist
 				wn.mainloop()
 			</py-script>
